@@ -1,0 +1,17 @@
+using clang ;
+using testing ;
+
+lib boost_unit_test_framework ;
+
+project ObjectTracker
+	:
+		requirements
+		<variant>release
+		<cxxflags>-std=c++11
+		<include>include
+	;
+
+unit-test Test :
+		[ glob src/ObjectTrackerTest.cpp ]
+		boost_unit_test_framework
+	;
