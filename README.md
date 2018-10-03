@@ -1,10 +1,14 @@
 # Obtrack
-an c++ object tracker using the curiously recurring template pattern.
+an C++ object tracker using the curiously recurring template pattern.
 
 The current version only depends on standard headers.
 
 ## Usage
 It is header only, just include `ObjectTracker.hpp` and inherit like `struct X : public ObjectTracker<X>`.
+
+## Dependencies
+It requires C++11 and only uses the C++ standard library.
+For testing boost build and boost test are required.
 
 ## Test
 
